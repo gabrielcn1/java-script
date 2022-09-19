@@ -1,39 +1,31 @@
-var a = document.getElementById('bloco')
+var x = document.getElementById('sobre')
 
-// Estilo
-a.style.width = '400px'
-a.style.height = '400px'
-a.style.background = 'gray'
-a.style.margin = 'auto'
-a.style.display = 'block'
-a.style.borderRadius = '50%'
-a.style.textAlign = 'center'
-a.style.justifyContent = 'center'
-a.style.alignItems = 'center'
-a.style.boxShadow = '0px 0px 1px black'
-a.style.lineHeight = '400px'
-a.style.fontSize = '70px'
-a.style.fontFamily = 'Arial'
-a.style.color = 'white'
+x.style.width = '500px'
+x.style.height = '500px'
+x.style.background = 'gray'
+x.style.lineHeight = '500px'
+x.style.textAlign = 'center'
+x.style.fontSize = '60px'
+x.style.color = 'white'
 
-// Funções
-a.addEventListener('click', clicou)
-a.addEventListener('mouseover', entrar)
-a.addEventListener('mouseout', sair)
-// Final das funções
+x.addEventListener ('click', clicar)
+x.addEventListener ('mouseover', entrar)
+x.addEventListener ('mouseout', sair)
 
-function clicou() {
-    a.innerText = 'Clicou!'
-    a.style.background = 'pink'
-    a.style.color = 'black'
+function clicar(){
+    x.innerText = 'Clicou!'
+    x.style.textTransform = 'uppercase'
+    x.style.background = 'red'
 }
 
 function entrar() {
-    a.innerText = 'Entrou!'
-    a.style.background = 'darkorange'
+    x.innerText = 'Entrou!'
+    x.style.textTransform = 'uppercase'
+    x.style.background = 'blue'
 }
 
 function sair() {
-    a.innerText = 'Saiu!'
-    a.style.background = 'green'
+    x.innerText = 'Saiu!'
+    x.style.textTransform = 'uppercase'
+    x.style.background = 'green'
 }
