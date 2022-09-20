@@ -15,3 +15,4 @@ function carregar() {
         document.body.style.background = 'rgb(25, 24, 24)'
     }
 }
+
