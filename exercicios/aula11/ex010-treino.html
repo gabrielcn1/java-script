@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+</head>
+<body>
+    <h1>Diga em qual país você mora</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Resposta" id="responder">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var resp = document.getElementById('responder')
+        resp.addEventListener ('click', responder)
+
+        function responder() {
+            var texto = document.getElementById('pais')
+            var res = document.getElementById ('res')
+            var pais = String(texto.value)
+            if (pais == 'Brasil') {
+                res.innerHTML += 'Você é brasileiro'
+            } else {
+                res.innerHTML += 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
