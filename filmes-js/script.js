@@ -34,3 +34,48 @@ function verificar() {
         imge.src = 'corra.jpg'
     } 
 }
+
+// DOM 
+
+var titulo = document.getElementById ('h1')
+var sect = document.getElementById ('section')
+var list = document.getElementById ('ul')
+var gen = document.getElementById ('gen')
+var bot = document.getElementById ('bot')
+var button = document.getElementById ('button')
+var img = document.getElementById ('img')
+
+// ESTILO
+
+titulo.style.fontFamily = 'Bungee Spice'
+titulo.style.fontSize = '3em'
+titulo.style.textAlign = 'center'
+titulo.style.margin = '20px 0px'
+titulo.style.textShadow = '5px 7px 1px black'
+
+sect.style.width = '700px'
+sect.style.background = 'white'
+sect.style.margin = 'auto'
+sect.style.padding = '15px'
+sect.style.borderRadius = '10px'
+sect.style.boxShadow = '6px 8px 8px rgba(0, 0, 0, 0.582)'
+
+list.style.listStyle = 'none'
+
+gen.style.columns = '3'
+
+bot.style.textAlign = 'center'
+bot.style.margin = '25px 0'
+
+button.style.padding = '10px'
+button.style.fontSize = '1.4em'
+button.style.fontFamily = 'Bungee Spice'
+button.style.border = 'none'
+button.style.borderRadius = '15px'
+button.style.background = '#2F97C1'
+button.style.cursor = 'pointer'
+button.style.textShadow = '2px 2px 1px black'
+button.style.boxShadow = '0px 0px 10px #F85E00'
+
+img.style.display = 'flex'
+img.style.justifyContent = 'center'
