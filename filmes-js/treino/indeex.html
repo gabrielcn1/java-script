@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        #body {
+            background-color: rgb(207, 207, 207);
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>Modo claro e Modo escuro</h1>
+
+    <label for="luz-clara">Claro: </label>
+    <input type="radio" name="luz" id="luz-clara" onclick="clicar()">
+
+    <label for="luz-escura">Escuro: </label>
+    <input type="radio" name="luz" id="luz-escura" onclick="clicar()">
+
+    <script>
+        function clicar() {
+            var fundo = document.getElementById ('body')
+            var luzz = document.getElementsByName('luz')
+                if (luzz[0].checked) {
+                    fundo.style.background = 'white'
+                } else { (luzz[1].checked) 
+                    fundo.style.background = 'gray'
+                }
+        }
+    </script>
+</body>
+</html>
