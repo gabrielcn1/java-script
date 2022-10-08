@@ -30,3 +30,14 @@ function contar() {
         res.innerHTML += `\u{1F3C1}`
     }
 }
+
+let bot = document.getElementById('botao')
+
+bot.style.padding = '7px 12px'
+bot.style.background = 'rgb(70, 142, 236)'
+bot.style.color = 'white'
+bot.style.fontSize = '20px'
+bot.style.fontWeight = 'bold'
+bot.style.border = 'none'
+bot.style.borderRadius = '8px'
+bot.style.cursor = 'pointer'
