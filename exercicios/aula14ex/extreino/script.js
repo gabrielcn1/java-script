@@ -1,23 +1,23 @@
 function clicar() {
-    var ini = document.getElementById('ini')
-    var fim = document.getElementById('fim')
-    var con = document.getElementById('con')
-    var res = document.getElementById('res')
+    let ini = document.getElementById('ini')
+    let fim = document.getElementById('fim')
+    let pas = document.getElementById('pas')
+    let res = document.getElementById('res')
 
-    if (ini.value == 0 || fim.value == 0 || con.value == 0) {
+    if (ini.value == 0 || fim.value == 0 || pas.value == 0){
         window.alert('[ERRO]')
     } else {
         res.innerHTML = 'Contando:'
-        i = Number(ini.value)
-        f = Number(fim.value)
-        c = Number(con.value)
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(pas.value)
         if (i < f) {
-            for(var p = i; p <= f; p += c) {
-                res.innerHTML += ` ${p}`
+            for(let c = i; c <= f; c += p) {
+                res.innerHTML += ` ${c}`
             }
         } else {
-            for(var p = i; p >= f; p -= c) {
-                res.innerHTML += ` ${p}`
+            for(let c = i; c >= f; c -= p) {
+                res.innerHTML += ` ${c}`
             }
         }
     }
